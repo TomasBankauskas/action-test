@@ -49,12 +49,13 @@ jobs:
               with:
                   github-token: ${{ secrets.GITHUB_TOKEN }} # Use the default token for PR creation
                   script: |
-                      const { data: pullRequest } = await github.pulls.create({
-                          owner: context.repo.owner,
-                          repo: context.repo.repo,
+                      const { owner, repo } = context.repo;
+                      const pullRequest = await github.pulls.create({
+                          owner,
+                          repo,
                           title: 'Import Feed Items',
                           head: 'feed-import-branch',
                           base: 'main',
                           body: 'This pull request imports feed items.'
                       });
-                      console.log(`Pull request created: ${pullRequest.html_url}`);
+                      console.log(`Pull request created: ${pullRequest.data.html_url}`);
