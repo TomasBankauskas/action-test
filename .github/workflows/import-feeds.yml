@@ -45,7 +45,7 @@ jobs:
                   git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} feed-import-branch
 
             - name: Create Pull Request
-              uses: actions/github-script@v6
+              uses: actions/github-script@v7
               with:
                   github-token: ${{ secrets.GITHUB_TOKEN }} # Use the default token for PR creation
                   script: |
