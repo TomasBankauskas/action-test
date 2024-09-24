@@ -40,7 +40,7 @@ jobs:
 
             - name: Push Changes to a New Branch
               env:
-                  GITHUB_TOKEN: ${{ secrets.MY_PAT }} # Use your PAT here
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the default token for PR creation
               run: |
                   git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} feed-import-branch
 
