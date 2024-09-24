@@ -50,7 +50,7 @@ jobs:
                   github-token: ${{ secrets.GITHUB_TOKEN }} # Use the default token for PR creation
                   script: |
                       const { owner, repo } = context.repo;
-                      const pullRequest = await github.pulls.create({
+                      const pullRequest = await github.rest.pulls.create({
                           owner,
                           repo,
                           title: 'Import Feed Items',
