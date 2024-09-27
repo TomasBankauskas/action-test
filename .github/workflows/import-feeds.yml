@@ -1,56 +1,46 @@
 name: Import Feed Items
 
 on:
-    workflow_dispatch: {}
-    schedule:
-        - cron: '0 0 * * *'
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
 
 jobs:
-    Import-Feed-Items:
-        name: Import Feed Items
-        runs-on: ubuntu-latest
+  Import-Feed-Items:
+    name: Import Feed Items
+    runs-on: ubuntu-latest
 
-        permissions: write-all
-        steps:
-            - uses: actions/checkout@v4
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
 
-            - uses: actions/setup-node@v4
-              with:
-                  node-version: 18
-                  cache: npm
+    steps:
+      - uses: actions/checkout@v4
 
-            - name: Install dependencies
-              run: npm ci # Use `npm ci` for clean install based on package-lock.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
 
-            - name: Import feeds
-              run: npm run import-feeds
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
-            - name: Commit Changes
-              run: |
-                  git config --global user.name "GitHub Action"
-                  git config --global user.email "action@github.com"
-                  git add src/content/feed/*.md
-                  git commit -m "Imported feed items" || echo "No changes to commit"
-                  git checkout -b feed-import-branch
+      - name: Import feeds
+        run: yarn import-feeds
+        env:
+          SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
+          SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
 
-            - name: Push Changes to a New Branch
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the default token for PR creation
-              run: |
-                  git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} feed-import-branch
-
-            - name: Create Pull Request
-              uses: actions/github-script@v7
-              with:
-                  github-token: ${{ secrets.GITHUB_TOKEN }} # Use the default token for PR creation
-                  script: |
-                      const { owner, repo } = context.repo;
-                      const pullRequest = await github.rest.pulls.create({
-                          owner,
-                          repo,
-                          title: 'Import Feed Items',
-                          head: 'feed-import-branch',
-                          base: 'main',
-                          body: 'This pull request imports feed items.'
-                      });
-                      console.log(`Pull request created: ${pullRequest.data.html_url}`);
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Imported feed items
+          file_pattern: 'src/content/feed/*.md'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: 'github-actions[bot]@users.noreply.github.com'
+        env:
+          GIT_AUTH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Use PAT here instead of GITHUB_TOKEN
