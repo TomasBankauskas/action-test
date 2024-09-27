@@ -1,5 +1,4 @@
 name: Import Feed Items
-
 on:
     workflow_dispatch: {}
     schedule:
@@ -17,6 +16,7 @@ jobs:
             # Give the default GITHUB_TOKEN write permission to commit and push the
             # added or changed files to the repository.
             contents: write
+            pull-requests: write
 
         steps:
             - uses: actions/checkout@v4
@@ -35,12 +35,13 @@ jobs:
                   SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
                   SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
 
-            - name: Commit and push changes
-              uses: stefanzweifel/git-auto-commit-action@v5
+            - name: Create Pull Request
+              uses: peter-evans/create-pull-request@v5
               with:
-                  commit_message: Imported feed items
-                  file_pattern: 'src/content/feed/*.md'
-                  commit_user_name: 'github-actions[bot]'
-                  commit_user_email: 'github-actions[bot]@users.noreply.github.com'
+                  commit-message: Imported feed items
+                  branch: import-feed-items-update-${{ github.run_number }}
+                  title: 'Import Feed Items'
+                  body: 'This PR imports feed items and updates the content.'
+                  labels: 'automated pr'
               env:
-                  GIT_AUTH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Use PAT here instead of GITHUB_TOKEN
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
