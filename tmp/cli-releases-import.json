@@ -1,5 +1,35 @@
 [
   {
+    "title": "v17.37.0-rc.1",
+    "link": "https://github.com/netlify/cli/releases/tag/v17.37.0-rc.1",
+    "pubDate": "2024-09-30T09:51:28.000Z",
+    "author": "invalid-email-address",
+    "content": "<p>17.37.0-rc.1</p>",
+    "contentSnippet": "17.37.0-rc.1",
+    "id": "tag:github.com,2008:Repository/25067998/v17.37.0-rc.1",
+    "isoDate": "2024-09-30T09:51:28.000Z"
+  },
+  {
+    "title": "v17.37.0-rc.0",
+    "link": "https://github.com/netlify/cli/releases/tag/v17.37.0-rc.0",
+    "pubDate": "2024-09-30T09:46:12.000Z",
+    "author": "invalid-email-address",
+    "content": "<p>17.37.0-rc.0</p>",
+    "contentSnippet": "17.37.0-rc.0",
+    "id": "tag:github.com,2008:Repository/25067998/v17.37.0-rc.0",
+    "isoDate": "2024-09-30T09:46:12.000Z"
+  },
+  {
+    "title": "v17.36.3",
+    "link": "https://github.com/netlify/cli/releases/tag/v17.36.3",
+    "pubDate": "2024-09-30T13:33:22.000Z",
+    "author": "token-generator-app[bot]",
+    "content": "<h2><a href=\"https://github.com/netlify/cli/compare/v17.36.2...v17.36.3\">17.36.3</a> (2024-09-30)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>deps:</strong> update dependency @types/node to v20.16.10 (<a href=\"https://github.com/netlify/cli/issues/6843\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6843/hovercard\">#6843</a>) (<a href=\"https://github.com/netlify/cli/commit/55830ebe326ecf7cc5dac697aff313e3c914ff87\">55830eb</a>)</li>\n<li><strong>deps:</strong> update dependency debug to v4.3.7 (<a href=\"https://github.com/netlify/cli/issues/6844\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6844/hovercard\">#6844</a>) (<a href=\"https://github.com/netlify/cli/commit/517e734e1b581d603dfcbd5e6e39c8a06cba85c4\">517e734</a>)</li>\n<li><strong>deps:</strong> update dependency express to v4.21.0 [security] (<a href=\"https://github.com/netlify/cli/issues/6839\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6839/hovercard\">#6839</a>) (<a href=\"https://github.com/netlify/cli/commit/0728f80ba749f474e8dcd47f0896a754d96b3608\">0728f80</a>)</li>\n<li><strong>deps:</strong> update netlify packages (<a href=\"https://github.com/netlify/cli/issues/6833\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6833/hovercard\">#6833</a>) (<a href=\"https://github.com/netlify/cli/commit/18c53bde294b831ca2c4cdf0a83ce71767ba337a\">18c53bd</a>)</li>\n<li><strong>deps:</strong> update netlify packages (<a href=\"https://github.com/netlify/cli/issues/6837\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6837/hovercard\">#6837</a>) (<a href=\"https://github.com/netlify/cli/commit/1e0ac96193298f00a83afd6d45fd29f70b5cd1ea\">1e0ac96</a>)</li>\n</ul>",
+    "contentSnippet": "17.36.3 (2024-09-30)\nBug Fixes\ndeps: update dependency @types/node to v20.16.10 (#6843) (55830eb)\ndeps: update dependency debug to v4.3.7 (#6844) (517e734)\ndeps: update dependency express to v4.21.0 [security] (#6839) (0728f80)\ndeps: update netlify packages (#6833) (18c53bd)\ndeps: update netlify packages (#6837) (1e0ac96)",
+    "id": "tag:github.com,2008:Repository/25067998/v17.36.3",
+    "isoDate": "2024-09-30T13:33:22.000Z"
+  },
+  {
     "title": "v17.36.2",
     "link": "https://github.com/netlify/cli/releases/tag/v17.36.2",
     "pubDate": "2024-09-20T12:01:48.000Z",
@@ -68,35 +98,5 @@
     "contentSnippet": "17.34.2 (2024-08-19)\nBug Fixes\napply default origin to plugins provided by plugin detection (#6781) (4a3eb18)\ndeps: update dependency @types/node to v20.16.0 (#6794) (7751edc)",
     "id": "tag:github.com,2008:Repository/25067998/v17.34.2",
     "isoDate": "2024-08-19T14:58:25.000Z"
-  },
-  {
-    "title": "v17.34.1",
-    "link": "https://github.com/netlify/cli/releases/tag/v17.34.1",
-    "pubDate": "2024-08-13T18:22:53.000Z",
-    "author": "token-generator-app[bot]",
-    "content": "<h2><a href=\"https://github.com/netlify/cli/compare/v17.34.0...v17.34.1\">17.34.1</a> (2024-08-13)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>deps:</strong> update dependency @types/node to v20.14.15 (<a href=\"https://github.com/netlify/cli/issues/6767\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6767/hovercard\">#6767</a>) (<a href=\"https://github.com/netlify/cli/commit/fe79b2756820c6af8adb01d63e0f4ff7b237628f\">fe79b27</a>)</li>\n<li><strong>deps:</strong> update dependency comment-json to v4.2.5 (<a href=\"https://github.com/netlify/cli/issues/6749\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6749/hovercard\">#6749</a>) (<a href=\"https://github.com/netlify/cli/commit/8e15833f5b61060fa81c84290905fc81c31b9ee4\">8e15833</a>)</li>\n<li><strong>deps:</strong> update dependency semver to v7.6.3 (<a href=\"https://github.com/netlify/cli/issues/6790\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6790/hovercard\">#6790</a>) (<a href=\"https://github.com/netlify/cli/commit/e351d1130651ba2dc83202c551f8cc581ff4c889\">e351d11</a>)</li>\n<li><strong>logs:</strong> add correct url to function logs (<a href=\"https://github.com/netlify/cli/issues/6787\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6787/hovercard\">#6787</a>) (<a href=\"https://github.com/netlify/cli/commit/b3e6e5af4f05fe623d4b6c535b4b08d1557dd337\">b3e6e5a</a>)</li>\n</ul>",
-    "contentSnippet": "17.34.1 (2024-08-13)\nBug Fixes\ndeps: update dependency @types/node to v20.14.15 (#6767) (fe79b27)\ndeps: update dependency comment-json to v4.2.5 (#6749) (8e15833)\ndeps: update dependency semver to v7.6.3 (#6790) (e351d11)\nlogs: add correct url to function logs (#6787) (b3e6e5a)",
-    "id": "tag:github.com,2008:Repository/25067998/v17.34.1",
-    "isoDate": "2024-08-13T18:22:53.000Z"
-  },
-  {
-    "title": "v17.34.0",
-    "link": "https://github.com/netlify/cli/releases/tag/v17.34.0",
-    "pubDate": "2024-08-08T19:47:06.000Z",
-    "author": "token-generator-app[bot]",
-    "content": "<h2><a href=\"https://github.com/netlify/cli/compare/v17.33.6...v17.34.0\">17.34.0</a> (2024-08-08)</h2>\n<h3>Features</h3>\n<ul>\n<li>add accountId to build options (<a href=\"https://github.com/netlify/cli/issues/6783\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6783/hovercard\">#6783</a>) (<a href=\"https://github.com/netlify/cli/commit/85dc37f0c996233d9f0024374643af62e6f0e535\">85dc37f</a>)</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>deps:</strong> update dependency @netlify/build to v29.53.0 (<a href=\"https://github.com/netlify/cli/issues/6786\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6786/hovercard\">#6786</a>) (<a href=\"https://github.com/netlify/cli/commit/81e8505a39bfbfe3bf90e211e538166c4fb8c53e\">81e8505</a>)</li>\n</ul>",
-    "contentSnippet": "17.34.0 (2024-08-08)\nFeatures\nadd accountId to build options (#6783) (85dc37f)\nBug Fixes\ndeps: update dependency @netlify/build to v29.53.0 (#6786) (81e8505)",
-    "id": "tag:github.com,2008:Repository/25067998/v17.34.0",
-    "isoDate": "2024-08-08T19:47:06.000Z"
-  },
-  {
-    "title": "v17.33.6",
-    "link": "https://github.com/netlify/cli/releases/tag/v17.33.6",
-    "pubDate": "2024-08-06T09:21:17.000Z",
-    "author": "token-generator-app[bot]",
-    "content": "<h2><a href=\"https://github.com/netlify/cli/compare/v17.33.5...v17.33.6\">17.33.6</a> (2024-08-06)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>deps:</strong> update dependency debug to v4.3.6 (<a href=\"https://github.com/netlify/cli/issues/6774\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6774/hovercard\">#6774</a>) (<a href=\"https://github.com/netlify/cli/commit/5b40ba86bf9aa6ca07e795784121e8cc9ba7f679\">5b40ba8</a>)</li>\n<li><strong>deps:</strong> update dependency listr2 to v8.2.4 (<a href=\"https://github.com/netlify/cli/issues/6775\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6775/hovercard\">#6775</a>) (<a href=\"https://github.com/netlify/cli/commit/ce5a32764e224738f08a7a8036ad207300b84c1b\">ce5a327</a>)</li>\n<li><strong>deps:</strong> update netlify packages (<a href=\"https://github.com/netlify/cli/issues/6778\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6778/hovercard\">#6778</a>) (<a href=\"https://github.com/netlify/cli/commit/494f62b9123141597371399568cb3f3a78fc5626\">494f62b</a>)</li>\n<li><strong>deps:</strong> update rust crate tokio to 1.27.0 [security] (<a href=\"https://github.com/netlify/cli/issues/6779\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6779/hovercard\">#6779</a>) (<a href=\"https://github.com/netlify/cli/commit/b37e49fa6ac525b4edda31f5c953fc339b51175a\">b37e49f</a>)</li>\n<li>load functions timeout from site properly (<a href=\"https://github.com/netlify/cli/issues/6777\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/netlify/cli/pull/6777/hovercard\">#6777</a>) (<a href=\"https://github.com/netlify/cli/commit/7feeceb7de0c03408a11b9e0982853edd4f2ed14\">7feeceb</a>)</li>\n</ul>",
-    "contentSnippet": "17.33.6 (2024-08-06)\nBug Fixes\ndeps: update dependency debug to v4.3.6 (#6774) (5b40ba8)\ndeps: update dependency listr2 to v8.2.4 (#6775) (ce5a327)\ndeps: update netlify packages (#6778) (494f62b)\ndeps: update rust crate tokio to 1.27.0 [security] (#6779) (b37e49f)\nload functions timeout from site properly (#6777) (7feeceb)",
-    "id": "tag:github.com,2008:Repository/25067998/v17.33.6",
-    "isoDate": "2024-08-06T09:21:17.000Z"
   }
 ]
